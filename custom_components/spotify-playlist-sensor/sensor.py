@@ -204,7 +204,7 @@ class SpotifyPlaylistSensor(Entity):
                 image = ''
             uri = playlist['uri']
             id = i
-            self.hass.data[self._name][name] = {}
+            self.hass.data[self._name][name] = i
             self.hass.data[self._name][name]['name'] = name
             self.hass.data[self._name][name]['image'] = image
             self.hass.data[self._name][name]['uri'] = uri
